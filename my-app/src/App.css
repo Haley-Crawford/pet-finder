@@ -1,0 +1,161 @@
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+} */
+
+.app {
+  display: flex;
+  justify-content: space-between;
+  background: url('https://t3.ftcdn.net/jpg/06/86/57/62/360_F_686576245_AdkSJosrRDeHVdO3ObJ9Mg2zWn0dKaN7.jpg');
+  background-size: contain;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.nav {
+  width: 385px;
+  backdrop-filter: blur(1px);
+  background-color: #61dafbb0;
+  padding-top: 3em;
+}
+
+.nav-title {
+  line-height: 1.1;
+  margin-bottom: 1em;
+  font-size: 2.5em;
+  text-align: center;
+}
+
+.nav li:hover {
+  background-color: #61dafbc1;
+  color: rgb(60, 60, 60);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  gap: 1em;
+}
+
+.aside-ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.aside-li {
+  background: white;
+  border: 3px solid black;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 1.5em;
+  background-color: #61dafbb0;
+  max-width: 1100px;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  row-gap: 1em;
+}
+
+.filters {
+  background: rgba(255, 255, 255, 0.842);
+  display: flex;
+  border: 1px solid black;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.filters label {
+  text-wrap: nowrap;
+}
+
+.wrapper {
+  display: flex;
+  gap: 0.5em;
+  align-items: center;
+  padding: 0 1em;
+  border-right: 3px solid gray;
+  border-top-right-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+  background: linear-gradient(to right, white 70%, lightgray)
+}
+
+input, select {
+  padding: 1em;
+  border: none;
+  background: rgba(255, 255, 255, 0);
+  background: transparent;
+  color: black;
+  width: 75px;
+}
+
+input[type='date'] {
+  width: 125px;
+}
+
+.animal {
+  overflow: hidden;
+  background: white;
+  border: 3px solid black;
+  border-radius: 5px;
+  width: 200px;
+  text-align: center;
+}
+
+.animal-name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 150px;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
